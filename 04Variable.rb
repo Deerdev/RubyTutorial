@@ -6,12 +6,16 @@
 
 # 一般小写字母、下划线开头：变量（Variable）。
 test
+
 # $开头：全局变量（Global variable）。
 $global
+
 # @开头：实例变量（Instance variable）。
 @member_variable
+
 # @@开头：类变量（Class variable）类变量被共享在整个继承链中
 @@class_variable
+
 # 大写字母开头：常数（Constant）。
 Test
 
