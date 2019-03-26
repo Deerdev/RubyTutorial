@@ -48,17 +48,19 @@ puts "#{num}"  # 6
 # 下面是公共的数组方法（假设 array 是一个 Array 对象）：
 
 # 序号	方法 & 描述
-# 1	array & other_array
+1	array & other_array
 # 返回一个新的数组，包含两个数组中共同的元素，没有重复。
-# 2	array * int [or] array * str
+
+2	array * int [or] array * str
 # 返回一个新的数组，新数组通过连接 self 的 int 副本创建的。带有 String 参数时，相当于 self.join(str)。
-# 3	array + other_array
+
+3	array + other_array
 # 返回一个新的数组，新数组通过连接两个数组产生第三个数组创建的。
-# 4	array - other_array
+
+4	array - other_array
 # 返回一个新的数组，新数组是从初始数组中移除了在 other_array 中出现的项的副本。
-# 5	str <=> other_str
-# 把 str 与 other_str 进行比较，返回 -1（小于）、0（等于）或 1（大于）。比较是区分大小写的。
-# 6	array | other_array
+
+6	array | other_array
 # 通过把 other_array 加入 array 中，移除重复项，返回一个新的数组。
 # 7	array << obj
 # 把给定的对象附加到数组的末尾。该表达式返回数组本身，所以几个附加可以连在一起。
@@ -94,8 +96,8 @@ puts "#{num}"  # 6
 # 从数组中移除所有的 nil 元素。如果没有变化则返回 nil。
 # 20	array.concat(other_array)
 # 追加 other_array 中的元素到 self 中。
-# 21	array.delete(obj) [or] 
-# array.delete(obj) { block }
+21	array.delete(obj) [or] 
+array.delete(obj) { block }
 # 从 self 中删除等于 obj 的项。如果未找到相等项，则返回 nil。如果未找到相等项且给出了可选的代码 block，则返回 block 的结果。
 # 22	array.delete_at(index)
 # 删除指定的 index 处的元素，并返回该元素。如果 index 超出范围，则返回 nil。
@@ -163,8 +165,9 @@ puts "#{num}"  # 6
 # 根据 aTemplateString 中的指令，把数组的内容压缩为二进制序列。指令 A、 a 和 Z 后可以跟一个表示结果字段宽度的数字。剩余的指令也可以带有一个表示要转换的数组元素个数的数字。如果数字是一个星号（*），则所有剩余的数组元素都将被转换。任何指令后都可以跟一个下划线（_），表示指定类型使用底层平台的本地尺寸大小，否则使用独立于平台的一致的尺寸大小。在模板字符串中空格会被忽略。
 # 48	array.pop
 # 从 array 中移除最后一个元素，并返回该元素。如果 array 为空则返回 nil。
-# 49	array.push(obj, ...)
+49	array.push(obj, ...)
 # 把给定的 obj 附加到数组的末尾。该表达式返回数组本身，所以几个附加可以连在一起。
+
 # 50	array.rassoc(key)
 # 搜索一个数组，其元素也是数组，使用 == 把 key 与每个包含的数组的第二个元素进行比较。如果匹配则返回第一个包含的数组。
 # 51	array.reject { |item| block }
@@ -181,8 +184,9 @@ puts "#{num}"  # 6
 # 与 Array#each 相同，但是把 array 进行逆转。
 # 57	array.rindex(obj)
 # 返回 array 中最后一个等于 obj 的对象的索引。如果未找到匹配，则返回 nil。
-# 58	array.select {|item| block }
+58	array.select {|item| block }
 # 调用从数组传入连续元素的 block，返回一个数组，包含 block 返回 true 值时的元素。
+
 # 59	array.shift
 # 返回 self 的第一个元素，并移除该元素（把所有的其他元素下移一位）。如果数组为空，则返回 nil。
 # 60	array.size

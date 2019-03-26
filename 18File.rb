@@ -53,7 +53,7 @@
 # unknown - 未知的文件类型
 # 16	File::grpowned?( path)
 # 如果 path 由用户的所属组所有，则返回 true。
-# 17	File::join( item...)
+17	File::join( item...)
 # 返回一个字符串，由指定的项连接在一起，并使用 File::Separator 进行分隔。
 # 例如：File::join("", "home", "usrs", "bin") # => "/home/usrs/bin"
 # 18	File::link( old, new)

@@ -51,7 +51,7 @@ aFile.close
 
 # File.open 方法
 # 您可以使用 File.open 方法创建一个新的 file 对象，并把该 file 对象赋值给文件。
-# 但是，File.open 和 File.new 方法之间有一点不同。不同点是 File.open 方法可与块关联，而 File.new 方法不能。
+# 但是，File.open 和 File.new 方法之间有一点不同。File.open 方法可与块关联，而 File.new 方法不能。
 
 # 块操作
 File.open("filename", "mode") do |aFile|
@@ -272,7 +272,7 @@ Dir.delete("testdir")
 
 # 9. 创建文件 & 临时目录
 
-# 临时文件是那些在程序执行过程中被简单地创建，但不会永久性存储的信息。
+# 临时文件 是在程序执行过程中被简单地创建，但不会永久性存储的信息。
 
 # Dir.tmpdir 提供了当前系统上临时目录的路径，但是该方法默认情况下是不可用的。为了让 Dir.tmpdir 可用，需要导入 'tmpdir' 。
 # 您可以把 Dir.tmpdir 和 File.join 一起使用，来创建一个独立于平台的临时文件：
