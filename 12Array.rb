@@ -62,20 +62,24 @@ puts "#{num}"  # 6
 
 6	array | other_array
 # 通过把 other_array 加入 array 中，移除重复项，返回一个新的数组。
-# 7	array << obj
+
+7	array << obj
 # 把给定的对象附加到数组的末尾。该表达式返回数组本身，所以几个附加可以连在一起。
 # 8	array <=> other_array
 # 如果数组小于、等于或大于 other_array，则返回一个整数（-1、 0 或 +1）。
 # 9	array == other_array
 # 如果两个数组包含相同的元素个数，且每个元素与另一个数组中相对应的元素相等（根据 Object.==），那么这两个数组相等。
-# 10	array[index] [or] array[start, length] [or]
-# array[range] [or] array.slice(index) [or]
-# array.slice(start, length) [or] array.slice(range)
+
+10	array[index] [or] array[start, length] [or]
+array[range] [or] array.slice(index) [or]
+array.slice(start, length) [or] array.slice(range)
 # 返回索引为 index 的元素，或者返回从 start 开始直至 length 个元素的子数组，或者返回 range 指定的子数组。负值索引从数组末尾开始计数（-1 是最后一个元素）。如果 index（或开始索引）超出范围，则返回 nil。
-# 11	array[index] = obj [or]
-# array[start, length] = obj or an_array or nil [or]
-# array[range] = obj or an_array or nil
+
+11	array[index] = obj [or]
+array[start, length] = obj or an_array or nil [or]
+array[range] = obj or an_array or nil
 # 设置索引为 index 的元素，或者替换从 start 开始直至 length 个元素的子数组，或者替换 range 指定的子数组。如果索引大于数组的当前容量，那么数组会自动增长。负值索引从数组末尾开始计数。如果 length 为零则插入元素。如果在第二种或第三种形式中使用了 nil，则从 self 删除元素。
+
 # 12	array.abbrev(pattern = nil)
 # 为 self 中的字符串计算明确的缩写集合。如果传递一个模式或一个字符串，只考虑当字符串匹配模式或者以该字符串开始时的情况。
 # 13	array.assoc(obj)
@@ -105,8 +109,9 @@ array.delete(obj) { block }
 # 当 block 为 true 时，删除 self 的每个元素。
 # 24	array.each { |item| block }
 # 为 self 中的每个元素调用一次 block，传递该元素作为参数。
-# 25	array.each_index { |index| block }
+25	array.each_index { |index| block }
 # 与 Array#each 相同，但是传递元素的 index，而不是传递元素本身。
+
 # 26	array.empty?
 # 如果数组本身没有包含元素，则返回 true。
 # 27	array.eql?(other)
@@ -135,8 +140,9 @@ array.delete(obj) { block }
 # 计算数组的哈希代码。两个具有相同内容的数组将具有相同的哈希代码。
 # 35	array.include?(obj)
 # 如果 self 中包含 obj，则返回 true，否则返回 false。
-# 36	array.index(obj)
-# 返回 self 中第一个等于 obj 的对象的 index。如果未找到匹配则返回 nil。
+36	array.index(obj)
+返回 self 中第一个等于 obj 的对象的 index。如果未找到匹配则返回 nil。
+
 # 37	array.indexes(i1, i2, ... iN) [or]
 # array.indices(i1, i2, ... iN)
 # 该方法在 Ruby 的最新版本中被废弃，所以请使用 Array#values_at。
@@ -172,8 +178,9 @@ array.delete(obj) { block }
 # 搜索一个数组，其元素也是数组，使用 == 把 key 与每个包含的数组的第二个元素进行比较。如果匹配则返回第一个包含的数组。
 # 51	array.reject { |item| block }
 # 返回一个新的数组，包含当 block 不为 true 时的数组项。
-# 52	array.reject! { |item| block }
-# 当 block 为真时，从 array 删除元素，如果没有变化则返回 nil。相当于 Array#delete_if。
+52	array.reject! { |item| block }
+当 block 为真时，从 array 删除元素，如果没有变化则返回 nil。相当于 Array#delete_if。
+
 # 53	array.replace(other_array)
 # 把 array 的内容替换为 other_array 的内容，必要的时候进行截断或扩充。
 # 54	array.reverse
