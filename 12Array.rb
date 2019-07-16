@@ -153,7 +153,7 @@ array.delete(obj) { block }
 # 在给定的 index 的元素前插入给定的值，index 可以是负值。
 # 40	array.inspect
 # 创建一个数组的可打印版本。
-# 41	array.join(sep=$,)
+41	array.join(sep=$,)
 # 返回一个字符串，通过把数组的每个元素转换为字符串，并使用 sep 分隔进行创建的。
 # 42	array.last [or] array.last(n)
 # 返回 self 的最后一个元素。如果数组为空，则第一种形式返回 nil。
