@@ -2,6 +2,7 @@
 # -*- coding : utf-8 -*-
 # -----------------------------------------------
 
+# [doc] https://ruby-doc.org/core-2.6.5/String.html
 
 #0. intro
 
